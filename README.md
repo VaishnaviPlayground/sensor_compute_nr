@@ -37,8 +37,8 @@ ros2 run rqt_plot rqt_plot
 Then, select the topics:
 - `/sensor1_topic/data`
 - `/sensor2_topic/data`
+For plotting data using matlab you can run the node and after sensor_data.csv is generated use the plot.py to get the plots
 
-This will display live plots of the sensor data.
 ## Logging and Output
 - Sensor data is saved in `sensor_data.csv`
 - Computed latency values are logged in `latency_measurements.txt`
