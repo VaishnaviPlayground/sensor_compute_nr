@@ -11,7 +11,6 @@
 
 //Custom message header to pubish stamped sine waves
 #include "sensor_compute/msg/sensor_timestamp.hpp"
-
 /**
  * @class CentralNode
  * @brief A ROS2 node that subscribes to two sensor topics and calculates latency and ensures time is synchronized.
@@ -52,9 +51,7 @@
     * @brief data used later can be used for plotting and also storing average latencies for 10 second intervals
     */
     void wave_sensor_data();
-
-
-
+    
     rclcpp::Subscription<sensor_compute::msg::SensorTimestamp>::SharedPtr sensor1_subscriber_;   ///< Subscriber for Sensor 1 data
     rclcpp::Subscription<sensor_compute::msg::SensorTimestamp>::SharedPtr sensor2_subscriber_;   ///< Subscriber for Sensor 2 data
     rclcpp::TimerBase::SharedPtr save_timer_;   /// Enables saving 10s data snapshot

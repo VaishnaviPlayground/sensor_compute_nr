@@ -6,7 +6,6 @@
 #ifndef SENSOR_NODE_HPP
 #define SENSOR_NODE_HPP
 
-
 //Ros2 dependencies header
 #include "rclcpp/rclcpp.hpp"
 
@@ -14,8 +13,6 @@
 #include "sensor_compute/msg/sensor_timestamp.hpp"
 
 using namespace std;
-
-
 /**
  * @class SensorNode
  * @brief A ROS2 node that simulates a sine wave sensor.
@@ -31,7 +28,7 @@ class SensorNode : public rclcpp::Node
      * @brief Constructor to create a SensorNode object.
      * @param sensor_name The name of the sensor, used as the topic name.
      * 
-     * This constructor initializes the ROS2 node, the publisher, and 
+     * an explicit constructor initializes the ROS2 node, the publisher, and 
      * initializes a timer to publish sine wave data periodically.
      */
     explicit SensorNode(const std::string  sensor_name);
